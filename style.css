@@ -1,0 +1,150 @@
+:root{
+    /* color */
+    --mainbgc: hsl(185, 75%, 39%);
+    --textcolor: hsl(229, 23%, 23%);
+    --linecolor: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+
+    /* font */
+    --fontfamily: "Kumbh Sans", system-ui;
+    /* name,stats fontsize: 18px */
+
+    /* width: mobile'375px', desktop'1440px'*/
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    /* border: solid 1px #ccc; */
+}
+
+html,body{
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--mainbgc);
+}
+
+.backgroundImage1{
+    background-image: url(https://raw.githubusercontent.com/tina801005/challenge13/4955c8be7370f055e90c84a757cb4d860963a6e7/images/bg-pattern-top.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    top: -40%;
+    z-index: -1;
+}
+
+.backgroundImage2{
+    background-image: url(https://raw.githubusercontent.com/tina801005/challenge13/4955c8be7370f055e90c84a757cb4d860963a6e7/images/bg-pattern-bottom.svg);
+    width: 130%;
+    height: 130%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 55%;
+    top: 45%;
+    z-index: -1;
+}
+
+.container{
+    max-width: 33rem;
+}
+.profileCard{
+    max-width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+
+    text-align: center;
+    font-family: var(--fontfamily);
+    color: var(--textcolor);
+}
+
+.cardTop{
+    max-width: 100%;
+    background-image: url(https://raw.githubusercontent.com/tina801005/challenge13/4955c8be7370f055e90c84a757cb4d860963a6e7/images/bg-pattern-card.svg);
+    width: 21rem;
+    height: 9rem;
+    position: relative;
+}
+.profileImage{
+    background-image: url(https://github.com/tina801005/challenge13/blob/main/images/image-victor.jpg?raw=true);
+    width: 6rem;
+    height: 6rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    border: 5px solid hsl(0, 0%, 100%);
+}
+
+.cardMiddle{
+    padding: 2rem;
+}
+
+.profileInfos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.profileName{
+    font-size: 1.1rem;
+}
+.profileAge{
+    font-size: 1.1rem;
+    color: var(--darkGray);
+}
+.location{
+    font-size: 0.9rem;
+    color: var(--darkGray);
+    padding-top: 0.8rem;
+}
+
+hr{
+
+    border-top: transparent;
+    border-bottom: solid 1px hsl(0, 0%, 89%);
+}
+
+.statsBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+
+.data{
+    font-size: 1.1rem;
+}
+
+.dataTitle{
+    font-size: 0.7rem;
+    color: var(--darkGray);
+    letter-spacing: 1px;
+    margin-top: 0.3rem;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        padding: 1rem;
+    }
+
+}
